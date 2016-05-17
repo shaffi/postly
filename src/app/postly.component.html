@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+
+<md-toolbar>
+  <button md-icon-button (click)="sidenav.open()">
+    <i class="fa fa-bars fa-lg"></i>
+   </button> POST.ly
+  <span class="example-fill-remaining-space "></span>
+
+  <a class="navicon" title="My Account">
+    <i class="fa fa-user fa-lg"> </i>
+  </a>
+  <a class="navicon" title="Sign out">
+    <i class="fa fa-sign-out fa-lg"></i>
+  </a>
+</md-toolbar>
+
+
+<button md-fab class="add-post-btn" title="New Post" (click)="createPostBtnClickhandler()">
+  <i class="fa fa-pencil-square-o fa-2x" ></i>
+</button>
+<md-sidenav-layout fullscreen>
+  <md-sidenav #sidenav>
+    <md-nav-list>
+      <a md-list-item (click)="sidenav.close()" [routerLink]="['/createpost']">
+        <i class="fa fa-pencil-square-o"> Create Post</i>
+      </a>
+      <a md-list-item (click)="sidenav.close()" [routerLink]="['/posts']">
+        <i class="fa fa-list-alt"> My Posts</i>
+      </a>
+      <a md-list-item (click)="sidenav.close()" [routerLink]="['/posts']">
+        <i class="fa fa-user"> My Account </i>
+      </a>
+      <a md-list-item (click)="sidenav.close()" [routerLink]="['/posts']">
+        <i class="fa fa-sign-out"> Sign out</i>
+      </a>
+    </md-nav-list>
+  </md-sidenav>
+  <router-outlet></router-outlet>
+</md-sidenav-layout>

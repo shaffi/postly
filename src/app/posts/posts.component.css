@@ -1,0 +1,23 @@
+
+    .posts-card-container {
+      margin-top: 20px;
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+    }
+h3{
+  text-align: center;
+}
+
+
+    img {
+      background-color: gray;
+    }
+
+    .posts-card-blue {
+      background-color: #B0BECC;
+    }
+post-item{
+        margin:10px 10px;
+
+}

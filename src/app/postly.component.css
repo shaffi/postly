@@ -1,0 +1,56 @@
+
+    .example-fill-remaining-space {
+      flex: 1 1 auto;
+    }
+
+    .posts-card-container {
+      margin-top: 20px;
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    md-card {
+      margin: 0 16px 25px 0;
+      width: 400px;
+      box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    }
+
+    img {
+      background-color: gray;
+    }
+
+    .posts-card-blue {
+      background-color: #B0BECC;
+    }
+
+    md-card-actions {
+      display: flex;
+      flex-direction: row;
+    }
+
+    [md-fab] {
+      position: absolute;
+      right: 3%;
+      bottom: 34px;
+      z-index: 1;
+    }
+
+    md-sidenav-layout {
+      background: #f2f3f4;
+    }
+
+    md-toolbar {
+      position: fixed;
+      background-color: #0972DD;
+      color: #fff;
+      z-index: 1;
+    }
+
+    md-sidenav-layout {
+      margin-top: 64px;
+    }
+.navicon{
+  padding: 5px;
+}
